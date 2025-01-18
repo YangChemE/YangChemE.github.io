@@ -1,0 +1,4 @@
+@use 'sass:math';
+
+// Example override
+$yiq: math.div(($red * 299) + ($green * 587) + ($blue * 114), 1000);
