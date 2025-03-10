@@ -1,16 +1,40 @@
-title: Yang's Personal Web
-email: yplsw90@outlook.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to my personal website. I am a computational chemist focusing on molecular dynamics and AI drug design.
+# Site settings
+title: Yang Wang | Personal Website
+email: your.email@example.com
+description: >-
+  Personal website of Yang Wang, Chemical Engineering Researcher exploring 
+  computational methods for molecular dynamics and chemical interactions.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://YangChemE.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  YangChemE
+url: "https://yangcheme.github.io" # the base hostname & protocol for your site
+github_username: YangChemE
+linkedin_username: yourprofile
+twitter_username: yourhandle
+google_scholar: YourID
+formspree_id: xxxxxxxxxxxx # Replace with your actual Formspree form ID
 
 # Build settings
-theme: minimal-mistakes-jekyll
+markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /:collection/:name
+  research:
+    output: true
+    permalink: /:collection/:name
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+  - README.md
 
 # Minimal Mistakes settings
 author:
